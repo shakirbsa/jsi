@@ -77,6 +77,7 @@ $table_prefix = 'wpjy_';
  *
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
+
 define( 'WP_DEBUG', false );
 
 /* That's all, stop editing! Happy publishing. */
