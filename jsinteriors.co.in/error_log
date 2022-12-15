@@ -1,0 +1,175 @@
+[14-Dec-2022 17:57:31 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $post is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 834
+[14-Dec-2022 17:57:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dimensio_wp514'@'localhost' (using password: YES) in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1626
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1626): mysqli_real_connect(Object(mysqli), 'localhost', 'dimensio_wp514', '4VS[1pmO@5', NULL, NULL, NULL, 0)
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('dimensio_wp514', '4VS[1pmO@5', 'dimensio_wp514', 'localhost')
+#3 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#4 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#5 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#8 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1626
+[14-Dec-2022 17:57:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dimensio_wp514'@'localhost' (using password: YES) in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1626
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1626): mysqli_real_connect(Object(mysqli), 'localhost', 'dimensio_wp514', '4VS[1pmO@5', NULL, NULL, NULL, 0)
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('dimensio_wp514', '4VS[1pmO@5', 'dimensio_wp514', 'localhost')
+#3 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#4 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#5 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#8 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1626
+[14-Dec-2022 17:59:50 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $post is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 834
+[14-Dec-2022 17:59:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dimensio_wp514'@'localhost' (using password: YES) in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1626
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1626): mysqli_real_connect(Object(mysqli), 'localhost', 'dimensio_wp514', '4VS[1pmO@5', NULL, NULL, NULL, 0)
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('dimensio_wp514', '4VS[1pmO@5', 'dimensio_wp514', 'localhost')
+#3 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#4 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#5 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#8 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1626
+[14-Dec-2022 17:59:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'dimensio_wp514'@'localhost' (using password: YES) in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1626
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1626): mysqli_real_connect(Object(mysqli), 'localhost', 'dimensio_wp514', '4VS[1pmO@5', NULL, NULL, NULL, 0)
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('dimensio_wp514', '4VS[1pmO@5', 'dimensio_wp514', 'localhost')
+#3 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#4 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#5 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#8 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1626
+[14-Dec-2022 18:00:04 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'nnucoin_jsint'@'localhost' to database 'nnucoin_jsintech' in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1079
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1079): mysqli_select_db(Object(mysqli), 'nnucoin_jsintec...')
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1709): wpdb->select('nnucoin_jsintec...', Object(mysqli))
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#3 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('nnucoin_jsint', 'M]V*)ikXkuwg', 'nnucoin_jsintec...', 'localhost')
+#4 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#5 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#8 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#9 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1079
+[14-Dec-2022 18:00:05 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'nnucoin_jsint'@'localhost' to database 'nnucoin_jsintech' in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1079
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1079): mysqli_select_db(Object(mysqli), 'nnucoin_jsintec...')
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1709): wpdb->select('nnucoin_jsintec...', Object(mysqli))
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#3 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('nnucoin_jsint', 'M]V*)ikXkuwg', 'nnucoin_jsintec...', 'localhost')
+#4 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#5 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#8 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#9 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1079
+[14-Dec-2022 18:00:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'nnucoin_jsint'@'localhost' to database 'nnucoin_jsintech' in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1079
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1079): mysqli_select_db(Object(mysqli), 'nnucoin_jsintec...')
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1709): wpdb->select('nnucoin_jsintec...', Object(mysqli))
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#3 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('nnucoin_jsint', 'M]V*)ikXkuwg', 'nnucoin_jsintec...', 'localhost')
+#4 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#5 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#8 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#9 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1079
+[14-Dec-2022 18:00:15 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'nnucoin_jsint'@'localhost' to database 'nnucoin_jsintech' in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php:1079
+Stack trace:
+#0 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1079): mysqli_select_db(Object(mysqli), 'nnucoin_jsintec...')
+#1 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(1709): wpdb->select('nnucoin_jsintec...', Object(mysqli))
+#2 /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php(631): wpdb->db_connect()
+#3 /home4/nnucoin/jsinteriors.co.in/wp-includes/load.php(426): wpdb->__construct('nnucoin_jsint', 'M]V*)ikXkuwg', 'nnucoin_jsintec...', 'localhost')
+#4 /home4/nnucoin/jsinteriors.co.in/wp-settings.php(126): require_wp_db()
+#5 /home4/nnucoin/jsinteriors.co.in/wp-config.php(90): require_once('/home4/nnucoin/...')
+#6 /home4/nnucoin/jsinteriors.co.in/wp-load.php(37): require_once('/home4/nnucoin/...')
+#7 /home4/nnucoin/jsinteriors.co.in/wp-blog-header.php(13): require_once('/home4/nnucoin/...')
+#8 /home4/nnucoin/jsinteriors.co.in/index.php(19): require('/home4/nnucoin/...')
+#9 {main}
+  thrown in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 1079
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_Theme::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 554
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_Theme::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 595
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_Theme::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 533
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_Theme::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 542
+[14-Dec-2022 18:01:02 UTC] PHP Warning:  Private methods cannot be final as they are never overridden by other classes in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-session-tokens.php on line 69
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $object_id declared before required parameter $taxonomy is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-includes/nav-menu.php on line 1061
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 920
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 940
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 952
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 963
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $block_name declared before required parameter $block_content is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-includes/blocks.php on line 191
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $value declared before required parameter $disabled_text is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/common.php on line 3222
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  version_compare(): Passing null to parameter #1 ($version1) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/addon/class-gf-addon.php on line 6014
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of GF_Field::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 84
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of GF_Field::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 90
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of GF_Field::offsetSet($offset, $data) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 99
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Return type of GF_Field::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 108
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $name declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $id declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $selected_value declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $tabindex declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $disabled_text declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $placeholder declared before required parameter $form is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field-date.php on line 600
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $depth declared before required parameter $output is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/structure/structure-header.php on line 151
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $depth declared before required parameter $output is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/structure/structure-header.php on line 431
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $tag is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/shortcodes/tabs.php on line 3
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $tag is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/shortcodes/blog_posts.php on line 3
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $code is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/shortcodes/google_maps.php on line 3
+[14-Dec-2022 18:01:02 UTC] PHP Deprecated:  Optional parameter $content declared before required parameter $tag is implicitly treated as a required parameter in /home4/nnucoin/jsinteriors.co.in/wp-content/themes/flatsome/inc/shortcodes/portfolio.php on line 4
+[14-Dec-2022 18:01:03 UTC] PHP Deprecated:  Return type of Requests_Cookie_Jar::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Cookie/Jar.php on line 63
+[14-Dec-2022 18:01:03 UTC] PHP Deprecated:  Return type of Requests_Cookie_Jar::offsetGet($key) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Cookie/Jar.php on line 73
+[14-Dec-2022 18:01:03 UTC] PHP Deprecated:  Return type of Requests_Cookie_Jar::offsetSet($key, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Cookie/Jar.php on line 89
+[14-Dec-2022 18:01:03 UTC] PHP Deprecated:  Return type of Requests_Cookie_Jar::offsetUnset($key) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Cookie/Jar.php on line 102
+[14-Dec-2022 18:01:03 UTC] PHP Deprecated:  Return type of Requests_Cookie_Jar::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Cookie/Jar.php on line 111
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of Requests_Utility_CaseInsensitiveDictionary::offsetExists($key) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Utility/CaseInsensitiveDictionary.php on line 40
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of Requests_Utility_CaseInsensitiveDictionary::offsetGet($key) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Utility/CaseInsensitiveDictionary.php on line 51
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of Requests_Utility_CaseInsensitiveDictionary::offsetSet($key, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Utility/CaseInsensitiveDictionary.php on line 68
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of Requests_Utility_CaseInsensitiveDictionary::offsetUnset($key) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Utility/CaseInsensitiveDictionary.php on line 82
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of Requests_Utility_CaseInsensitiveDictionary::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/Requests/Utility/CaseInsensitiveDictionary.php on line 91
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp.php on line 173
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 2975
+[14-Dec-2022 18:01:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php:9) in /home4/nnucoin/jsinteriors.co.in/wp-includes/pluggable.php on line 1281
+[14-Dec-2022 18:01:04 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php:9) in /home4/nnucoin/jsinteriors.co.in/wp-includes/pluggable.php on line 1284
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_Theme::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 554
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_Theme::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 595
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_Theme::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 533
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_Theme::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-theme.php on line 542
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 920
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 940
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetSet($offset, $value) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 952
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of WP_REST_Request::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-includes/rest-api/class-wp-rest-request.php on line 963
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  version_compare(): Passing null to parameter #1 ($version1) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/addon/class-gf-addon.php on line 6014
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of GF_Field::offsetExists($offset) should either be compatible with ArrayAccess::offsetExists(mixed $offset): bool, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 84
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of GF_Field::offsetGet($offset) should either be compatible with ArrayAccess::offsetGet(mixed $offset): mixed, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 90
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of GF_Field::offsetSet($offset, $data) should either be compatible with ArrayAccess::offsetSet(mixed $offset, mixed $value): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 99
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  Return type of GF_Field::offsetUnset($offset) should either be compatible with ArrayAccess::offsetUnset(mixed $offset): void, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/gravityforms/includes/fields/class-gf-field.php on line 108
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp.php on line 173
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 2975
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  ltrim(): Passing null to parameter #1 ($string) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/wp-db.php on line 2975
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 6384
+[14-Dec-2022 18:01:04 UTC] PHP Deprecated:  str_replace(): Passing null to parameter #3 ($subject) of type array|string is deprecated in /home4/nnucoin/jsinteriors.co.in/wp-includes/functions.php on line 2095
