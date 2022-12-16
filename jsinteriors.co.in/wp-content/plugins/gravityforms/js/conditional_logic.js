@@ -12,15 +12,16 @@ gform.addAction( 'gform_input_change', function( elem, formId, fieldId ) {
 }, 10 );
 
 function gf_apply_rules(formId, fields, isInit){
-	var rule_applied = 0;
+
 	jQuery(document).trigger( 'gform_pre_conditional_logic', [ formId, fields, isInit ] );
 	for(var i=0; i < fields.length; i++){
 		gf_apply_field_rule(formId, fields[i], isInit, function(){
-			rule_applied++;
-			if(rule_applied == fields.length){
+			var is_last_field = ( i >= fields.length - 1 );
+			if( is_last_field ) {
 				jQuery(document).trigger('gform_post_conditional_logic', [formId, fields, isInit]);
-				if(window["gformCalculateTotalPrice"])
+				if(window["gformCalculateTotalPrice"]){
 					window["gformCalculateTotalPrice"](formId);
+				}
 			}
 		});
 	}
@@ -138,13 +139,18 @@ function gf_is_match( formId, rule ) {
 		$inputs = $( 'input[id="input_{0}_{1}"], input[id^="input_{0}_{1}_"], input[id^="choice_{0}_{1}_"], select#input_{0}_{1}, textarea#input_{0}_{1}'.format( formId, fieldId ) );
 	}
 
-	var isCheckable = $.inArray( $inputs.attr( 'type' ), [ 'checkbox', 'radio' ] ) !== -1,
-		isMatch     = isCheckable ? gf_is_match_checkable( $inputs, rule, formId, fieldId ) : gf_is_match_default( $inputs.eq( 0 ), rule, formId, fieldId );
+	var isCheckable = $.inArray( $inputs.attr( 'type' ), [ 'checkbox', 'radio' ] ) !== -1;
+	var isMatch     = isCheckable ? gf_is_match_checkable( $inputs, rule, formId, fieldId ) : gf_is_match_default( $inputs.eq( 0 ), rule, formId, fieldId );
 
 	return gform.applyFilters( 'gform_is_value_match', isMatch, formId, rule );
 }
 
 function gf_is_match_checkable( $inputs, rule, formId, fieldId ) {
+
+	// Rule is checking if the checkable is/isn't blank. Return a specific check for that use-case.
+	if ( rule.value === '' ) {
+		return rule.operator === 'is' ? gf_is_checkable_empty( $inputs ) : ! gf_is_checkable_empty( $inputs );
+	}
 
 	var isMatch = false;
 
@@ -177,6 +183,26 @@ function gf_is_match_checkable( $inputs, rule, formId, fieldId ) {
 	} );
 
 	return isMatch;
+}
+
+/**
+ * Check if a collection of checkable inputs has any checked,
+ * or if they are all unchecked.
+ *
+ * @param {jQuery} $inputs A collection of inputs to check.
+ *
+ * @returns {boolean}
+ */
+function gf_is_checkable_empty( $inputs ) {
+	var isEmpty = true;
+
+	$inputs.each( function() {
+		if ( jQuery( this ).is( ':checked' ) ) {
+			isEmpty = false;
+		}
+	} );
+
+	return isEmpty;
 }
 
 function gf_is_match_default( $input, rule, formId, fieldId ) {
@@ -328,7 +354,24 @@ function gf_do_field_action(formId, action, fieldId, isInit, callback){
 		//calling callback function on the last dependent field, to make sure it is only called once
 		do_callback = (i+1) == dependent_fields.length ? callback : null;
 
-		gf_do_action(action, targetId, conditional_logic["animation"], defaultValues, isInit, do_callback, formId);
+		/**
+		 * Allow add-ons to abort gf_do_action() function.
+		 *
+		 * @since 2.6.2
+		 *
+		 * @param bool   $doAbort      The value being filtered. True to abort conditional logic action, false to continue. Defaults to false.
+		 * @param string $action       The conditional logic action that will be performed. Possible values: show or hide
+		 * @param string $targetId     HTML element id that will be the targed of the conditional logic action.
+		 * @param bool   $doAnimation  True to perform animation while showing/hiding field. False to hide/show field without animation.
+		 * @param array  $defaultValue Array containg default field values.
+		 * @param bool   $isInit       True if form is being initialized (i.e. before user has interacted with any input). False otherwise.
+		 * @param array  $formId       The current form ID.
+		 * @param func   $do_callback   Callback function to be executed after conditional logic is executed.
+		 */
+		let abort = gform.applyFilters( 'gform_abort_conditional_logic_do_action', false, action, targetId, conditional_logic[ "animation" ], defaultValues, isInit, formId, do_callback );
+		if ( ! abort ) {
+			gf_do_action( action, targetId, conditional_logic[ "animation" ], defaultValues, isInit, do_callback, formId );
+		}
 
 		gform.doAction('gform_post_conditional_logic_field_action', formId, action, targetId, defaultValues, isInit);
 	}
@@ -338,11 +381,27 @@ function gf_do_next_button_action(formId, action, fieldId, isInit){
 	var conditional_logic = window["gf_form_conditional_logic"][formId];
 	var targetId = "#gform_next_button_" + formId + "_" + fieldId;
 
-	gf_do_action(action, targetId, conditional_logic["animation"], null, isInit, null, formId);
+	/**
+	 * Allow add-ons to abort gf_do_action() function.
+	 *
+	 * @since 2.6.2
+	 *
+	 * @param bool   $doAbort      The value being filtered. True to abort conditional logic action, false to continue. Defaults to false.
+	 * @param string $action       The conditional logic action that will be performed. Possible values: show or hide
+	 * @param string $targetId     HTML element id that will be the targed of the conditional logic action.
+	 * @param bool   $doAnimation  True to perform animation while showing/hiding field. False to hide/show field without animation.
+	 * @param array  $defaultValue Array containg default field values.
+	 * @param bool   $isInit       True if form is being initialized (i.e. before user has interacted with any input). False otherwise.
+	 * @param array  $formId       The current form ID.
+	 * @param func   $do_callback   Callback function to be executed after conditional logic is executed.
+	 */
+	let abort = gform.applyFilters( 'gform_abort_conditional_logic_do_action', false, action, targetId, conditional_logic[ "animation" ], null, isInit, formId, null );
+	if ( ! abort ) {
+		gf_do_action( action, targetId, conditional_logic[ "animation" ], null, isInit, null, formId );
+	}
 }
 
 function gf_do_action(action, targetId, useAnimation, defaultValues, isInit, callback, formId){
-
 	var $target = jQuery( targetId );
 
 	/**
@@ -364,7 +423,14 @@ function gf_do_action(action, targetId, useAnimation, defaultValues, isInit, cal
 
 		if(useAnimation && !isInit){
 			if($target.length > 0){
-				$target.find(':input:hidden:not(.gf-default-disabled)').prop( 'disabled', false );
+				$target.find(':input:hidden:not(.gf-default-disabled)').removeAttr( 'disabled' );
+				if ( $target.is( 'input[type="submit"]' ) || $target.hasClass( 'gform_next_button' ) ) {
+					$target.removeAttr( 'disabled' ).css( 'display', '' );
+					if ( '1' == gf_legacy.is_legacy ) {
+						// for legacy markup, remove screen reader class.
+						$target.removeClass( 'screen-reader-text' );
+					}
+				}
 				$target.slideDown(callback);
 			} else if(callback){
 				callback();
@@ -374,12 +440,22 @@ function gf_do_action(action, targetId, useAnimation, defaultValues, isInit, cal
 
 			var display = $target.data('gf_display');
 
-			//defaults to list-item if previous (saved) display isn't set for any reason
+			// set display if previous (saved) display isn't set for any reason
 			if ( display == '' || display == 'none' ){
-				display = 'list-item';
+				display = '1' === gf_legacy.is_legacy ? 'list-item' : 'block';
 			}
-			$target.find(':input:hidden:not(.gf-default-disabled)').prop( 'disabled', false );
-			$target.css('display', display);
+			$target.find(':input:hidden:not(.gf-default-disabled)').removeAttr( 'disabled' );
+
+			// Handle conditional submit and next buttons.
+			if ( $target.is( 'input[type="submit"]' ) || $target.hasClass( 'gform_next_button' ) ) {
+				$target.removeAttr( 'disabled' ).css( 'display', '' );
+				if ( '1' == gf_legacy.is_legacy ) {
+					// for legacy markup, remove screen reader class.
+					$target.removeClass( 'screen-reader-text' );
+				}
+			} else {
+				$target.css( 'display', display );
+			}
 
 			if(callback){
 				callback();
@@ -410,14 +486,30 @@ function gf_do_action(action, targetId, useAnimation, defaultValues, isInit, cal
 		}
 
 		if(useAnimation && !isInit){
-			if($target.length > 0 && $target.is(":visible")) {
-				$target.slideUp(callback);
-			} else if(callback) {
+			if( $target.is( 'input[type="submit"]' ) || $target.hasClass( 'gform_next_button' ) ) {
+				$target.attr( 'disabled', 'disabled' ).hide();
+				if ( '1' === gf_legacy.is_legacy ) {
+					// for legacy markup, let screen readers read the button.
+					$target.addClass( 'screen-reader-text' );
+				}
+			} else if ( $target.length > 0 && $target.is( ":visible" ) ) {
+				$target.slideUp( callback );
+			} else if ( callback ) {
 				callback();
 			}
 		} else{
-			$target.hide();
-			$target.find(':input:hidden:not(.gf-default-disabled)').prop( 'disabled', true );
+
+			// Handle conditional submit and next buttons.
+			if ( $target.is( 'input[type="submit"]' ) || $target.hasClass( 'gform_next_button' ) ) {
+				$target.attr( 'disabled', 'disabled' ).hide();
+				if ( '1' === gf_legacy.is_legacy ) {
+					// for legacy markup, let screen readers read the button.
+					$target.addClass( 'screen-reader-text' );
+				}
+			} else {
+				$target.css( 'display', 'none' );
+			}
+			$target.find(':input:hidden:not(.gf-default-disabled)').attr( 'disabled', 'disabled' );
 			if(callback){
 				callback();
 			}
@@ -530,6 +622,7 @@ function gf_reset_to_default(targetId, defaultValue){
 			if( gf_is_hidden_pricing_input( element ) ) {
 				var ids = gf_get_ids_by_html_id( element.parents( '.gfield' ).attr( 'id' ) );
 				jQuery( '#input_' + ids[0] + '_' + ids[1] ).text( gformFormatMoney( element.val() ) );
+				element.val( gformFormatMoney( element.val() ) );
 			}
 		}
 		else{
@@ -568,13 +661,13 @@ function gf_reset_to_default(targetId, defaultValue){
 
 function gf_is_hidden_pricing_input( element ) {
 
-	if( element.attr( 'type' ) !== 'hidden' ) {
-		return false;
-	}
-
 	// Check for Single Product fields.
 	if( element.attr( 'id' ) && element.attr( 'id' ).indexOf( 'ginput_base_price' ) === 0 ) {
 		return true;
+	}
+
+	if( element.attr( 'type' ) !== 'hidden' ) {
+		return false;
 	}
 
 	// Check for Shipping fields.

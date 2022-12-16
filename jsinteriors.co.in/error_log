@@ -464,3 +464,7 @@ Stack trace:
 [15-Dec-2022 09:42:26 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nnucoin/jsinteriors.co.in/index.php:2) in /home4/nnucoin/jsinteriors.co.in/wp-includes/pluggable.php on line 1419
 [15-Dec-2022 09:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nnucoin/jsinteriors.co.in/index.php:2) in /home4/nnucoin/jsinteriors.co.in/wp-includes/pluggable.php on line 1416
 [15-Dec-2022 09:47:42 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/nnucoin/jsinteriors.co.in/index.php:2) in /home4/nnucoin/jsinteriors.co.in/wp-includes/pluggable.php on line 1419
+[15-Dec-2022 17:45:12 UTC] PHP Warning:  Undefined array key "accepted_quote_action" in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/sliced-invoices/includes/payments/sliced-shared-payments.php on line 608
+[15-Dec-2022 17:45:12 UTC] PHP Warning:  Undefined array key "accepted_quote_action" in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/sliced-invoices/includes/payments/sliced-shared-payments.php on line 609
+[15-Dec-2022 17:45:12 UTC] PHP Warning:  Undefined array key "accepted_quote_action" in /home4/nnucoin/jsinteriors.co.in/wp-content/plugins/sliced-invoices/includes/payments/sliced-shared-payments.php on line 617
+[16-Dec-2022 06:32:08 UTC] PHP Warning:  Undefined array key 0 in /home4/nnucoin/jsinteriors.co.in/wp-includes/class-wp-query.php on line 3571
